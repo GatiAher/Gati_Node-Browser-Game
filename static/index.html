@@ -1,0 +1,25 @@
+<!-- index.html for node-browser-game -->
+
+<!-- code from https://hackernoon.com/how-to-build-a-multiplayer-browser-game-4a793818c29b -->
+
+<html>
+    <head>
+        <title>Gati's Game</title>
+        <!--canvas provides script for rendering images and graphs--> 
+        <style>
+            canvas {
+                width: 800px;
+                height: 600px;
+                border: 5px solid black;
+            }
+        </style>
+        <!--The script element allows authors to include dynamic script and data blocks in their documents. 
+            This element does not represent content for the user-->
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+
+    <body>
+        <canvas id="canvas"></canvas>
+    </body>
+    <script src="/static/game.js"></script>
+</html>
